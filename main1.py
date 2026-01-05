@@ -69,7 +69,7 @@ if not TOKEN or not OWNER_ID:
 
 MAX_CHANNELS_PER_BUTTON = 20
 MAX_TIMES_PER_BUTTON = 22
-BATCH_SIZE = 29
+BATCH_SIZE = 18
 
 DB_NAME = "bot_data.db"
 
@@ -1353,6 +1353,7 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
 
 
 
