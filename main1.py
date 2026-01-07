@@ -69,7 +69,7 @@ if not TOKEN or not OWNER_ID:
 
 MAX_CHANNELS_PER_BUTTON = 20
 MAX_TIMES_PER_BUTTON = 22
-BATCH_SIZE = 18
+BATCH_SIZE = 19
 
 DB_NAME = "bot_data.db"
 
@@ -454,7 +454,7 @@ async def forward_messages_job(context: ContextTypes.DEFAULT_TYPE):
 
         messages_to_send = await db_fetchall(
             "SELECT id, content, media_type, file_id FROM messages WHERE button_id=? AND status='pending' ORDER BY id ASC LIMIT ?",
-            (button_id, 29)
+            (button_id, 19)
         )
         
         if messages_to_send:
@@ -1353,6 +1353,7 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
 
 
 
