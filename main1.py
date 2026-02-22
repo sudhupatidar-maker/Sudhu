@@ -60,7 +60,7 @@ OWNER_ID = 7644128376 # SUDHANSU
 #-1003131533605
 # -1003070978442
 
-BACKUP_CHAT_ID = -1003070978442 # आपका backup चैनल/ग्रुप ID
+BACKUP_CHAT_ID = -1003762815044 # आपका backup चैनल/ग्रुप ID
 
 # अगर TOKEN या OWNER_ID नहीं मिला तो बॉट को क्रैश कर दें
 if not TOKEN or not OWNER_ID:
@@ -1353,6 +1353,7 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
 
 
 
