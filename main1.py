@@ -1208,7 +1208,7 @@ async def prompt_upload_db(update: Update, context: ContextTypes.DEFAULT_TYPE) -
 
 async def send_db_backup(context: ContextTypes.DEFAULT_TYPE):
     db_file = "bot_data.db"  # ya aap apni required file ka naam yahan de
-    tg_channel_id = -1003131533605  # Datastore/backup channel ka chat_id (negative value wali ID dalen)
+    tg_channel_id = -1003762815044 # Datastore/backup channel ka chat_id (negative value wali ID dalen)
     if os.path.exists(db_file):
         try:
             await context.bot.send_document(
@@ -1353,6 +1353,7 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
 
 
 
